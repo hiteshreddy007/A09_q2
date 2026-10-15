@@ -115,13 +115,23 @@
     <p>Academic textbooks, reference guides, and engineering essentials</p>
   </header>
 
+  <!-- STEP 10 NEW FEATURE: Thank-You Message & Course Rating Summary -->
+  <div class="container" style="margin-top: 16px; margin-bottom: 0;">
+    <div style="background: #ecfdf5; border-left: 6px solid #10b981; padding: 16px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+      <h3 style="color: #065f46; font-size: 1.1rem; margin-bottom: 6px;">Thank You for Visiting Campus Bookstore!</h3>
+      <p style="color: #047857; font-size: 0.9rem; line-height: 1.4;">
+        We appreciate your patronage. Current Course Rating Summary: <strong>4.9 / 5.0</strong> based on verified faculty recommendations.
+      </p>
+    </div>
+  </div>
+
   <div class="container">
     <div class="toolbar">
       <input type="text" id="searchInput" class="search-box" placeholder="Search by title or author...">
       <button class="cart-btn" onclick="alert('Cart has ' + cartCount + ' item(s)')">Cart (<span id="cartCount">0</span>)</button>
     </div>
 
-    <!-- 6 Required Books Displayed -->
+    <!-- 6 Books Inventory Grid -->
     <div class="books-grid" id="booksList">
       <div class="book-card">
         <div>
@@ -202,7 +212,7 @@
       </div>
     </div>
 
-    <!-- Order Status Tracking Section -->
+    <!-- Order Tracking -->
     <div class="panel">
       <h2>Order Status Tracker</h2>
       <div class="order-status">
